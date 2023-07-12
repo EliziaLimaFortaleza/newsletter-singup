@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  background-color: hsl(235, 18%, 26%);
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.minibox {
+  max-height: 500px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: flex-start; 
+  text-align: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.minibox h1 {
+  font-size: 40px;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 12px;
+}
+
+.minibox p {
+  text-align: start;
+  margin-right: 365px;
+  margin-left: 30px;
+}
+
+.minibox h6 {
+  margin-top: 5px;
+  margin-left: 30px;
+  text-align: start;
+}
+
+.minibox .h1p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: px;
+}
+
+.minibox .content {
+  flex-basis: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.minibox .inputs {
+  margin-left: 30px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.minibox .inputs .input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.minibox .inputs .input-group input[type="checkbox"] {
+  cursor: pointer;
+  margin-right: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.minibox .inputs .input-group input[type="checkbox"]:checked {
+  background-color: hsl(4, 100%, 67%);
+  background-image: url('../newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="text"] {
+  cursor: pointer;
+  padding: 16px;
+  margin-top: 8px;
+  width: 84%;
+  margin-left: -7px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.minibox .image-container {
+  flex-basis: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+img.imagem {
+  max-width: 53%;
+  height: auto;
+  margin-left: 608px;
+  margin-top: -463px;
+}
+
+button {
+  color: hsl(0, 0%, 100%);
+  padding: 16px;
+  width: 84%;
+  margin-left: -7px;
+  margin-bottom: 20px;
+  background-color: hsl(234, 29%, 20%);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: rgb(213,85,108);
+  background: linear-gradient(90deg, rgba(213,85,108,1) 22%, rgba(230,110,102,1) 40%);
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+input.invalid-email {
+  color: red;
+  border-color: red;
+  background-color: #ffdddd;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 215px;
+}
+
+.invalid-checkbox {
+  border-color: red;
+  background-color: #ffdddd;
+  outline: 1px solid red;
+}
+
+@media (max-width: 768px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: hsl(0, 0%, 100%);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .minibox {
+    padding: 0 10px 0 10px;
+    height: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .minibox h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  .minibox p {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .minibox .content {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .minibox .image-container {
+    order: -1; 
+    margin-bottom: 30px;
+    margin-top: -96px;
+  }
+
+  img.imagem {
+      content: url(../newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg);
+      padding: 0;
+      max-width: 100vh;
+      height: 50vh;
+      margin-left: -1px;
+      margin-top: 10px;
+  }
+
+}
